@@ -35,9 +35,6 @@ namespace Vehicles.Vehicles
         /// Get full info about the Scooter
         /// </summary>
         /// <returns></returns>
-        public override string GetFullInfo()
-        {
-            return base.GetFullInfo() + $"\nMaxSpeed: {MaxSpeed}\n";
-        }
+        public override string GetFullInfo()=> base.GetFullInfo() + $"\nMaxSpeed: {MaxSpeed}\n";
     }
 }

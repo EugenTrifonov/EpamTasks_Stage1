@@ -35,9 +35,6 @@ namespace Vehicles.Vehicles
         /// Get full info about the Bus
         /// </summary>
         /// <returns></returns>
-        public override string GetFullInfo()
-        {
-            return base.GetFullInfo() + $"\nNumberOfSeats: {NumberOfSeats}\n";
-        }
+        public override string GetFullInfo()=> base.GetFullInfo() + $"\nNumberOfSeats: {NumberOfSeats}\n";
     }
 }

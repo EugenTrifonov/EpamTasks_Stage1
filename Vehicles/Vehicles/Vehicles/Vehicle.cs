@@ -16,9 +16,6 @@ namespace Vehicles.Vehicles
             Transmission = transmission ?? throw new Exception("The vehicle needs a transmission"); ;
         }
 
-        public virtual string GetFullInfo()
-        {
-            return $"{Engine.GetFullInfo()}\n {Chassis.GetFullInfo()}\n {Transmission.GetFullInfo()}";
-        }
+        public virtual string GetFullInfo() => $"{Engine.GetFullInfo()}\n {Chassis.GetFullInfo()}\n {Transmission.GetFullInfo()}";
     }
 }

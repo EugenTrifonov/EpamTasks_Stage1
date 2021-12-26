@@ -35,9 +35,6 @@ namespace Vehicles.Vehicles
         /// Get full info about the Truck
         /// </summary>
         /// <returns></returns>
-        public override string GetFullInfo()
-        {
-            return base.GetFullInfo() + $"\nMaxLoad: {MaxLoad}\n";
-        }
+        public override string GetFullInfo()=>base.GetFullInfo() + $"\nMaxLoad: {MaxLoad}\n";
     }
 }

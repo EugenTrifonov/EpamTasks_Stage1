@@ -35,9 +35,6 @@ namespace Vehicles.Vehicles
         /// Get full info about the Car
         /// </summary>
         /// <returns></returns>
-        public override string GetFullInfo()
-        {
-            return base.GetFullInfo() + $"\nWeight: {Weight}\n";
-        }
+        public override string GetFullInfo()=> base.GetFullInfo() + $"\nWeight: {Weight}\n";
     }
 }

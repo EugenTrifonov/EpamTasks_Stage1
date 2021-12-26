@@ -58,9 +58,6 @@ namespace Vehicles.Components
         /// Get full info about the Transmission
         /// </summary>
         /// <returns></returns>
-        public string GetFullInfo()
-        {
-            return ($"Transmisssion: Type:{Type} Number of gears:{NumberOfGears} Manufacturer:{Manufacturer}");
-        }
+        public string GetFullInfo() => $"Transmisssion: Type:{Type} Number of gears:{NumberOfGears} Manufacturer:{Manufacturer}";
     }
 }

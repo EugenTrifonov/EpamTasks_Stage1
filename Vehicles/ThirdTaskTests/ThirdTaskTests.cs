@@ -3,10 +3,10 @@ using Vehicles.Components;
 using Vehicles.Enums;
 using Vehicles.Vehicles;
 
-namespace Task3tests
+namespace ThirdTaskTests
 {
     [TestClass]
-    public class Task3tests
+    public class ThirdTaskTests
     {
         [TestMethod]
         [ExpectedException(typeof(System.Exception))]
@@ -18,7 +18,6 @@ namespace Task3tests
                 new Transmission(TransmissionType.Automatic, 123, "fdg"), 4);
         }
 
-
         [TestMethod]
         [ExpectedException(typeof(System.Exception))]
         public void CreateCarWithoutChassis()
@@ -28,7 +27,6 @@ namespace Task3tests
                 null,
                 new Transmission(TransmissionType.Automatic, 25, "gfdg"), 4);
         }
-
 
         [TestMethod]
         [ExpectedException(typeof(System.Exception))]

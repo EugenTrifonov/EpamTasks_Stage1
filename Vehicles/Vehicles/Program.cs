@@ -6,7 +6,7 @@ using Vehicles.Vehicles;
 
 namespace Vehicles
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
@@ -35,11 +35,10 @@ namespace Vehicles
 
                 List<Vehicle> VehicleList = new List<Vehicle> { NewCar, NewBus, NewScooter, NewTruck };
 
-                foreach (Vehicle i in VehicleList)
+                foreach (Vehicle vehicle in VehicleList)
                 {
-                    Console.WriteLine(Convert.ToString(i) + "\n" + i.GetFullInfo());
+                    Console.WriteLine(Convert.ToString(vehicle) + "\n" + vehicle.GetFullInfo());
                 }
-
             }
             catch (Exception exception)
             {

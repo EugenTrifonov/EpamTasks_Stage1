@@ -79,9 +79,6 @@ namespace Vehicles.Components
         /// Get full info about the Engine
         /// </summary>
         /// <returns></returns>
-        public string GetFullInfo()
-        {
-            return ($"Engine: Type:{Type} Power:{Power} Capacity:{Capacity} Serial number:{SerialNumber}");
-        }
+        public string GetFullInfo() => $"Engine: Type:{Type} Power:{Power} Capacity:{Capacity} Serial number:{SerialNumber}";
     }
 }
