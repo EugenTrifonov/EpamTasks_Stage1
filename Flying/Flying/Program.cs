@@ -17,16 +17,15 @@ namespace Flying
                 IFlyable bird = new Bird(A);
                 List<IFlyable> ObjList = new List<IFlyable> { bird, dron, airplane };
 
-                foreach (IFlyable i in ObjList)
+                foreach (IFlyable item in ObjList)
                 {
-                    Console.WriteLine(i.GetFlyTime(B));
+                    Console.WriteLine(item.GetFlyTime(B));
                 }
             }
             catch (Exception exception)
             {
                 Console.WriteLine(exception);
             }
-
         }
     }
 }

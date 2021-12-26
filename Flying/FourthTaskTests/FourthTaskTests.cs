@@ -2,10 +2,10 @@ using Flying;
 using Flying.Objects;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Task4_tests
+namespace FourthTaskTests
 {
     [TestClass]
-    public class Task4tests
+    public class FourthTaskTests
     {
         [TestMethod]
         [DataRow(2, 4, 1, 2000)]
