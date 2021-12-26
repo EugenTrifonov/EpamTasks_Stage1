@@ -17,6 +17,7 @@ namespace Vehicles.Vehicles
 
         public Chassis Chassis { get; set; }
 
+        // Empty constructor required for serialization
         public Vehicle() { }
 
         public Vehicle(Engine engine, Chassis chassis, Transmission transmission)
@@ -30,10 +31,6 @@ namespace Vehicles.Vehicles
         /// Get full info about the Vehicle
         /// </summary>
         /// <returns></returns>
-        public virtual string GetFullInfo()
-        {
-            return $"{Engine.GetFullInfo()}\n {Chassis.GetFullInfo()}\n {Transmission.GetFullInfo()}";
-        }
-
+        public virtual string GetFullInfo() => $"{Engine.GetFullInfo()}\n {Chassis.GetFullInfo()}\n {Transmission.GetFullInfo()}";
     }
 }

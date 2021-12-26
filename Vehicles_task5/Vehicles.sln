@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.31727.386
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vehicles", "Vehicles\Vehicles.csproj", "{6EF82574-8743-4DB3-BF5A-E8E2E759A148}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task5_tests", "Task5_tests\Task5_tests.csproj", "{C3B14117-E942-43FB-842E-E37139107C3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task5_tests", "Task5_tests\Task5_tests.csproj", "{C3B14117-E942-43FB-842E-E37139107C3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FifthTaskTests", "FifthTaskTests\FifthTaskTests.csproj", "{1779754F-77CC-4214-9769-02665EFA9DE0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C3B14117-E942-43FB-842E-E37139107C3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C3B14117-E942-43FB-842E-E37139107C3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C3B14117-E942-43FB-842E-E37139107C3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1779754F-77CC-4214-9769-02665EFA9DE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1779754F-77CC-4214-9769-02665EFA9DE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1779754F-77CC-4214-9769-02665EFA9DE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1779754F-77CC-4214-9769-02665EFA9DE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

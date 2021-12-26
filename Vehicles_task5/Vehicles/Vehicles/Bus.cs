@@ -27,6 +27,7 @@ namespace Vehicles.Vehicles
             }
         }
 
+        // Empty constructor required for serialization
         public Bus() { }
 
         public Bus(Engine engine, Chassis chassis, Transmission transmission, int numberOfSeats) : base(engine, chassis, transmission)
@@ -38,9 +39,6 @@ namespace Vehicles.Vehicles
         /// Get full info about the Bus
         /// </summary>
         /// <returns></returns>
-        public override string GetFullInfo()
-        {
-            return base.GetFullInfo() + $"\nNumberOfSeats: {NumberOfSeats}\n";
-        }
+        public override string GetFullInfo() => base.GetFullInfo() + $"\nNumberOfSeats: {NumberOfSeats}\n";
     }
 }

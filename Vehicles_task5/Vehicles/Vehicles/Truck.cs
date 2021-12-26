@@ -26,6 +26,7 @@ namespace Vehicles.Vehicles
             }
         }
 
+        // Empty constructor required for serialization
         public Truck() { }
 
         public Truck(Engine engine, Chassis chassis, Transmission transmission, int maxLoad) : base(engine, chassis, transmission)
@@ -37,9 +38,6 @@ namespace Vehicles.Vehicles
         /// Get full info about the Truck
         /// </summary>
         /// <returns></returns>
-        public override string GetFullInfo()
-        {
-            return base.GetFullInfo() + $"\nMaxLoad: {MaxLoad}\n";
-        }
+        public override string GetFullInfo() => base.GetFullInfo() + $"\nMaxLoad: {MaxLoad}\n";
     }
 }

@@ -2,10 +2,11 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Vehicles.Components;
 using Vehicles.Enums;
 using Vehicles.Vehicles;
-namespace Task5_tests
+
+namespace FifthTaskTests
 {
     [TestClass]
-    public class Task5tests
+    public class FifthTaskTests
     {
         [TestMethod]
         [ExpectedException(typeof(System.Exception))]

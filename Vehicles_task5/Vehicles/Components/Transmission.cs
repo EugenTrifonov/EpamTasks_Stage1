@@ -49,6 +49,7 @@ namespace Vehicles.Components
             }
         }
 
+        // Empty constructor required for serialization
         public Transmission() { }
 
         public Transmission(TransmissionType type, int numberOfGears, string manufacturer)
@@ -58,9 +59,6 @@ namespace Vehicles.Components
             Manufacturer = manufacturer;
         }
 
-        public string GetFullInfo()
-        {
-            return $"Transmisssion: Type:{Type} Number of gears:{NumberOfGears} Manufacturer:{Manufacturer}";
-        }
+        public string GetFullInfo()=> $"Transmisssion: Type:{Type} Number of gears:{NumberOfGears} Manufacturer:{Manufacturer}";
     }
 }

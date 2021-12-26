@@ -66,6 +66,7 @@ namespace Vehicles.Components
             }
         }
 
+        // Empty constructor required for serialization
         public Chassis() { }
 
         public Chassis(int number, int numberOfWheels, int maxload)
@@ -79,9 +80,6 @@ namespace Vehicles.Components
         /// Get full info about the Chassis
         /// </summary>
         /// <returns></returns>
-        public string GetFullInfo()
-        {
-            return $"Chassis: Number of wheels:{NumberOfWheels} Number:{Number} Max load:{MaxLoad}";
-        }
+        public string GetFullInfo()=> $"Chassis: Number of wheels:{NumberOfWheels} Number:{Number} Max load:{MaxLoad}";
     }
 }

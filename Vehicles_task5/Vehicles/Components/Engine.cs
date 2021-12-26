@@ -49,6 +49,7 @@ namespace Vehicles.Components
                 }
             }
         }
+
         public double Capacity
         {
             get
@@ -62,10 +63,13 @@ namespace Vehicles.Components
                     throw new Exception("Capacity can't be less or equals 0");
                 }
                 else
+                { 
                     _capacity = value;
+                    }
             }
         }
 
+        // Empty constructor required for serialization
         public Engine() { }
 
         public Engine(EngineType type, int power, double capacity, string serialNumber)
@@ -80,9 +84,6 @@ namespace Vehicles.Components
         /// Get full info about the Engine
         /// </summary>
         /// <returns></returns>
-        public string GetFullInfo()
-        {
-            return $"Engine: Type:{Type} Power:{Power} Capacity:{Capacity} Serial number:{SerialNumber}";
-        }
+        public string GetFullInfo()=> $"Engine: Type:{Type} Power:{Power} Capacity:{Capacity} Serial number:{SerialNumber}";
     }
 }

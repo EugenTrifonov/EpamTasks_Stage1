@@ -26,6 +26,7 @@ namespace Vehicles.Vehicles
             }
         }
 
+        // Empty constructor required for serialization
         public Scooter() { }
 
         public Scooter(Engine engine, Chassis chassis, Transmission transmission, int maxSpeed) : base(engine, chassis, transmission)
@@ -37,9 +38,6 @@ namespace Vehicles.Vehicles
         /// Get full info about the Scooter
         /// </summary>
         /// <returns></returns>
-        public override string GetFullInfo()
-        {
-            return base.GetFullInfo() + $"\nMaxSpeed: {MaxSpeed}\n";
-        }
+        public override string GetFullInfo() => base.GetFullInfo() + $"\nMaxSpeed: {MaxSpeed}\n";
     }
 }

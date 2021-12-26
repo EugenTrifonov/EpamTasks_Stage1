@@ -17,14 +17,14 @@ namespace Vehicles
         /// <param Value="value"></param>
         public static void SerializeVehiclesFullInfoWithVolumeMoreThen(List<Vehicle> list, double value)
         {
-            List<string> result = (from i in list
-                                   where i.Engine.Capacity > value
-                                   select i.GetFullInfo()).ToList();
+            List<string> result = (from item in list
+                                   where item.Engine.Capacity > value
+                                   select item.GetFullInfo()).ToList();
 
             XmlSerializer formatter = new XmlSerializer(typeof(List<string>));
-            using (FileStream fs = new FileStream("GetVehiclesWithVolumeMoreThen.xml", FileMode.OpenOrCreate))
+            using (FileStream fileStream = new FileStream("GetVehiclesWithVolumeMoreThen.xml", FileMode.OpenOrCreate))
             {
-                formatter.Serialize(fs, result);
+                formatter.Serialize(fileStream, result);
             }
         }
 
@@ -34,13 +34,13 @@ namespace Vehicles
         /// <param Vehicles list="list"></param>
         public static void SerializeEngineTypeNumberCapacityForTruckBus(List<Vehicle> list)
         {
-                List<Helper> result = (from i in list
-                         where i.GetType() == typeof(Bus) || i.GetType() == typeof(Truck)
-                         select new Helper{ Type = i.Engine.Type, SerialNumber = i.Engine.SerialNumber, Capacity = i.Engine.Capacity }).ToList();
+                List<Helper> result = (from item in list
+                         where item.GetType() == typeof(Bus) || item.GetType() == typeof(Truck)
+                         select new Helper{ Type = item.Engine.Type, SerialNumber = item.Engine.SerialNumber, Capacity = item.Engine.Capacity }).ToList();
             XmlSerializer formatter = new XmlSerializer(typeof(List<Helper>));
-            using (FileStream fs = new FileStream("GetEngineTypeNumberCapacityForTruckBus.xml", FileMode.OpenOrCreate))
+            using (FileStream fileStream = new FileStream("GetEngineTypeNumberCapacityForTruckBus.xml", FileMode.OpenOrCreate))
             {
-                formatter.Serialize(fs, result);
+                formatter.Serialize(fileStream, result);
             }
 
         }
@@ -51,14 +51,14 @@ namespace Vehicles
         /// <param Vehicles list="list"></param>
         public static void SerializeVehiclesFullInfoGroupByTransmissionType(List<Vehicle> list)
         {
-            List<string> result = (from i in list
-                                   group i by i.Transmission.Type into groups
-                                   from j in groups.ToList()
-                                   select j.GetFullInfo()).ToList();
+            List<string> result = (from item in list
+                                   group item by item.Transmission.Type into groups
+                                   from items in groups.ToList()
+                                   select items.GetFullInfo()).ToList();
             XmlSerializer formatter = new XmlSerializer(typeof(List <string>));
-            using (FileStream fs = new FileStream("GetVehiclesGroupByTransmissionType.xml", FileMode.OpenOrCreate))
+            using (FileStream fileStream = new FileStream("GetVehiclesGroupByTransmissionType.xml", FileMode.OpenOrCreate))
             {
-                formatter.Serialize(fs, result);
+                formatter.Serialize(fileStream, result);
             }
         }
     }
