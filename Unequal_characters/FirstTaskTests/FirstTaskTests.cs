@@ -1,9 +1,9 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Task1_Tests
+namespace Firsttasktests
 {
     [TestClass]
-    public class Task1_Tests
+    public class FirstTaskTests
     {
         [TestMethod]
         [DataRow("abcdefa", 6)]
@@ -14,7 +14,7 @@ namespace Task1_Tests
         {
             Assert.AreEqual(expectedLength, Unequalcharacters.UnequalCharactersSequence.GetMaxNumberofUnequalCharacters(new string[] { input }));
         }
-        
+
         [TestMethod]
         [ExpectedException(typeof(System.Exception))]
         [DataRow(new string[] { "dfsdf", "adasdada", "dsfsf" })]
@@ -22,7 +22,7 @@ namespace Task1_Tests
         {
             Unequalcharacters.UnequalCharactersSequence.GetMaxNumberofUnequalCharacters(input);
         }
-        
+
         [TestMethod]
         [ExpectedException(typeof(System.Exception))]
         [DataRow(new string[] { })]

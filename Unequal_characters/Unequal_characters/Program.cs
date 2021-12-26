@@ -1,9 +1,8 @@
 ﻿using System;
-using Unequalcharacters;
 
-namespace Unequal_characters
+namespace Unequalcharacters
 {
-    class Program
+     public class Program
     {
         static void Main(string[] args)
         {

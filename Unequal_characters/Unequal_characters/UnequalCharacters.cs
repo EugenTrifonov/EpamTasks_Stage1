@@ -75,6 +75,7 @@ namespace Unequalcharacters
             {
                 CurrentIndex--;
             }
+
             return CurrentIndex - 1;
         }
 
