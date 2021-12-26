@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Firsttasktests
+namespace FirstTaskTests
 {
     [TestClass]
     public class FirstTaskTests

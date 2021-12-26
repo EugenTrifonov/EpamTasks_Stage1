@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Unequalcharacters
+namespace UnequalCharacters
 {
     public class UnequalCharactersSequence
     {

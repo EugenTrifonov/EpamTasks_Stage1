@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Unequalcharacters
+namespace UnequalCharacters
 {
      public class Program
     {
