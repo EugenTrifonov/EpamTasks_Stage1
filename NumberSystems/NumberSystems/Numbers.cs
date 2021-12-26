@@ -1,13 +1,12 @@
 ﻿using System;
 using System.Text;
 
-
-namespace Numbersystems
+namespace NumberSystems
 {
     public class Numbers
     {
         private const int LeftEdge = 2;
-        private const int RightEdge=20;
+        private const int RightEdge = 20;
         private static int Value;
         private static int BaseOfNumberSystem;
 
@@ -29,7 +28,6 @@ namespace Numbersystems
 
                 int result;
                 int number = Value;
-
                 while (number != 0) 
                 {
                     result = number % BaseOfNumberSystem;
@@ -57,7 +55,9 @@ namespace Numbersystems
         /// <returns></returns>
         private static bool CheckInput(string[] args)
         {
-            if (args.Length<2) 
+            bool result = true;
+
+            if (args.Length < 2) 
             {
                 throw new Exception("Not enough arguments");
             }
@@ -80,7 +80,7 @@ namespace Numbersystems
                 throw new Exception("The number should be positive");            
             }
             
-            return true;
+            return result;
         }
     }
 }

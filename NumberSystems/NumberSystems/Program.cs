@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace Numbersystems
+namespace NumberSystems
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
