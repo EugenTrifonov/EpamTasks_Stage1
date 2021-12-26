@@ -15,11 +15,11 @@ namespace NumberSystems
         /// </summary>
         /// <param Input arguments="args"></param>
         /// <returns></returns>
-        public static string ConvertNumber(string[] args) 
+        public static string ConvertNumber(string[] args)
         {
             StringBuilder ConvertedNumber = new StringBuilder(String.Empty);
 
-            if (CheckInput(args)) 
+            if (CheckInput(args))
             {
                 if (Value == 0)
                 {
@@ -28,26 +28,25 @@ namespace NumberSystems
 
                 int result;
                 int number = Value;
-                while (number != 0) 
+                while (number != 0)
                 {
                     result = number % BaseOfNumberSystem;
                     number = number / BaseOfNumberSystem;
-                    
+
                     if (result > 9)
                     {
                         ConvertedNumber.Insert(0, (char)(result + 55));
                     }
-                    else 
+                    else
                     {
                         ConvertedNumber.Insert(0, result);
                     }
                 }
-            
             }
-            
+
             return ConvertedNumber.ToString();
         }
-        
+
         /// <summary>
         /// Check input arguments
         /// </summary>
@@ -57,7 +56,7 @@ namespace NumberSystems
         {
             bool result = true;
 
-            if (args.Length < 2) 
+            if (args.Length < 2)
             {
                 throw new Exception("Not enough arguments");
             }
@@ -75,11 +74,11 @@ namespace NumberSystems
                 throw new Exception($"Base of new number system should be in range {LeftEdge}-{RightEdge}");
             }
 
-            if (Value < 0) 
+            if (Value < 0)
             {
-                throw new Exception("The number should be positive");            
+                throw new Exception("The number should be positive");
             }
-            
+
             return result;
         }
     }
